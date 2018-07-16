@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>面向对象</title>
+</head>
+<body>
+	<script>
+		// es5
+		// function User(name,pass) {
+		// 	this.name = name
+		// 	this.pass = pass
+		// }
+		// User.prototype.showName = function() {
+		// 	console.log(this.name,this.pass)
+		// }
+		// var ll = new User('吴昊','123')
+		// ll.showName()
+
+		// es6
+
+		class User{
+			constructor(name,pass){
+				this.name = name
+				this.pass = pass
+			}
+			showName(){
+				console.log(this.name)
+			}
+			showPass(){
+				console.log(this.pass)
+			}
+		}
+		class VipUser extends User{
+			constructor(name,pass,level){
+				super(name,pass)
+				this.level = level
+			}
+			showLevel(){
+				console.log(this.level)
+			}
+		}
+		var wuhao = new VipUser('wuhao','123',99)
+		wuhao.showLevel()
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Promise</title>
+</head>
+<body>
+	先执行Promise中的同步函数，再执行异步代码then.reject可以提示出报错信息
+	<script>
+		let pro1 = new Promise((resolve,reject)=>{
+
+			resolve('success')
+			reject('error')
+		})
+		pro1.then((res)=>{
+			// 成功的回调
+			console.log(res)
+		},(err)=>{
+			// 失败的回调
+			console.log(err)
+		})
+	</script>
+</body>
+</html>

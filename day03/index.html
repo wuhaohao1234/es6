@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>参数展开</title>
+</head>
+<body>
+	<script>
+		// function show(a,b,...args){
+		// 	console.log(a)
+		// 	console.log(b)
+		// 	console.log(args)//35,3,一个数组，必须得放最后
+		// }
+		// show(12,5,35,3)
+
+		// let arr = [1,2,3]
+		// function show(a,b,c) {
+		// 	console.log(a)
+		// 	console.log(b)
+		// 	console.log(c)
+		// }
+		// show(...arr)
+
+		function show(a,b = 5,c = 3){
+			console.log(a,b,c)
+		}
+		show(99)
+	</script>
+</body>
+</html>

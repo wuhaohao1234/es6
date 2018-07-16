@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue双向数据绑定</title>
+</head>
+<body>
+	<div id="app">
+		<h2>vue双向数据绑定</h2>
+		<input type="text" mv-model="msg" >
+		
+		<input type="text" mv-model="msg" >
+		
+		<p mv-bind="msg" ></p>
+		
+	</div>
+	<script src="myVue.js" ></script>
+	<script>
+		new Vue({
+			el : '#app',
+			data : {
+				msg : 'helloVue',
+				name : '吴昊'
+			}
+		})
+	</script>
+</body>
+</html>

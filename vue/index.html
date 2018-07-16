@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue</title>
+</head>
+<body>
+	<div id="app">
+		<input type="text" mv-model="abc" >
+		<span mv-bind="abc" ></span>
+	</div>
+	<script src="vue.js" ></script>
+	<script>
+		new MiniVue({
+			el : '#app',
+			data : {
+				abc : '123'
+			}
+		})
+	</script>
+</body>
+</html>
